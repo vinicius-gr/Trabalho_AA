@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1498016686 source:/home/jefferson/Documentos/Trabalho AA/Merge-Sort/main.c
+	"merge.h"
+
+1498016455 /home/jefferson/Documentos/Trabalho AA/Merge-Sort/merge.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	<time.h>
+	<float.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<math.h>
+
+1498016445 source:/home/jefferson/Documentos/Trabalho AA/Merge-Sort/merge.c
+	"merge.h"
+	<stdio.h>
+	<stdio.h>
+
