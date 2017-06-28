@@ -19,13 +19,13 @@
    tempo_de_cpu = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
                   fim.tv_nsec - inicio.tv_nsec;               \
    }
-#define CRONOMETRA1(funcao,vetor,n) {                          \
-   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
-   funcao(vetor,n);                                           \
-   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
-   tempo_de_cpu = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
-                  fim.tv_nsec - inicio.tv_nsec;               \
-   }
+#define CRONOMETRA1(funcao,vetor,n) {      }                    \
+//   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
+//   funcao(vetor,n);                                           \
+//   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
+//   tempo_de_cpu = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
+//                  fim.tv_nsec - inicio.tv_nsec;               \
+//   }
 
 #define NUM_EXECS 5
 typedef struct{

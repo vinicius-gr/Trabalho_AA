@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1498016445 source:c:\users\eseba\documents\github\trabalho_aa\códigos -- tudo cagado ainda tem q organizar\merge.c
+	"merge.h"
+	<stdio.h>
+	<stdio.h>
+
+1498670930 c:\users\eseba\documents\github\trabalho_aa\códigos -- tudo cagado ainda tem q organizar\merge.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	<time.h>
+	<float.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<math.h>
+
+1498670916 source:c:\users\eseba\documents\github\trabalho_aa\códigos -- tudo cagado ainda tem q organizar\main.c
+	"merge.h"
+

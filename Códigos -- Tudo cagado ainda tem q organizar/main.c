@@ -11,7 +11,7 @@ int main()
     FILE *reader = fopen(nomes, "r");
     FILE *tempos;
     FILE *vetor;
-    struct timespec inicio, fim;
+//    struct timespec inicio, fim;
     uint64_t tempo_de_cpu;
     uint64_t soma;
     char nome2[100]="double/";

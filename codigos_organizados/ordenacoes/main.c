@@ -31,6 +31,7 @@ int main()
 
         case 2:
             tempos = fopen("tempos\\mergesort.txt", "w");
+            le_ordena_grava_tempo(mergesort, tempos,reader);
             rewind(reader);
             break;
 

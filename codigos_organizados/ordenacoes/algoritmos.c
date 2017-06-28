@@ -41,38 +41,43 @@ void countingsort(int *vetor, int size)
 //  HEAP   //
 ////////////
 
-int total;
-
-void heapify(int *arr, int i)
+void heapify(int *arr, int i, int tam)
 {
-    int lft = i * 2;
-    int rgt = lft + 1;
-    int grt = i;
+    int esq = i*2+1;
+    int dir = esq++;
+    int maior;
 
-    if (lft <= total && arr[lft] > arr[grt]) grt = lft;
-    if (rgt <= total && arr[rgt] > arr[grt]) grt = rgt;
-    if (grt != i)
+    if (esq <= tam && arr[esq] > arr[i])
+        maior = esq;
+
+    else
+        maior = i;
+
+    if (dir <= tam && arr[dir] > arr[maior])
+        maior = dir;
+
+    if (maior != i)
     {
-        swap(arr, i, grt);
-        heapify(arr, grt);
+        swap(arr, i, maior);
+        heapify(arr, maior, tam);
     }
 }
 
-void heapsort(int *arr, int size)
+void heapsort(int *arr, int tam)
 {
-    total = size - 1;
     int i;
 
-    for (i = total / 2; i >= 0; i--)
-        heapify(arr, i);
+    for (i = ceil(tam / 2); i >= 0; i--)
+        heapify(arr, i, tam);
 
-    for (i = total; i > 0; i--)
+    for (i = tam; i > 0; i--)
     {
         swap(arr, 0, i);
-        total--;
-        heapify(arr, 0);
+        tam--;
+        heapify(arr, 0, tam);
     }
 }
+
 
 ///////////////////
 //  INSERTION   //
@@ -100,43 +105,52 @@ void insertionSort(int vetor[], int tamVetor)
 //  QUICK   //
 /////////////
 
-void partition(int arr[], int a, int b)
+void quicksort (int *vet, int tam)
 {
-    if (a >= b)
-        return;
+    quick(vet, 0, tam);
+}
 
-    int key = arr[a];
-    int i = a + 1, j = b;
-    while (i < j)
+void quick (int *vet, int esq, int dir)
+{
+    int pivo;
+    if (esq < dir)
     {
-        while (i < j && arr[j] >= key)
-            --j;
-        while (i < j && arr[i] <= key)
-            ++i;
-        if (i < j)
-            swap(arr, i, j);
-    }
-    if (arr[a] > arr[i])
-    {
-        swap(arr, a, i);
-        partition(arr, a, i - 1);
-        partition(arr, i + 1, b);
-    }
-    else     // there is no left-hand-side
-    {
-        partition(arr, a + 1, b);
+        pivo = particiona(vet, esq, dir);
+        quick(vet, esq, pivo-1);
+        quick(vet, pivo+1, dir);
     }
 }
 
-void quicksort(int arr[], int len)
+int particiona (int *vet, int esq, int dir)
 {
-    partition(arr, 0, len - 1);
+    int i;
+    int pivo = esq + rand()%(dir-esq+1);
+
+    swap(vet, pivo, esq);
+
+    pivo = esq;
+
+    for (i = esq+1; i <= dir; i++)
+    {
+        if (vet[i] < vet[esq])
+        {
+            pivo++;
+            if (i != pivo)
+                swap(vet, i, pivo);
+        }
+    }
+
+    swap(vet, esq, pivo);
+
+    return pivo;
 }
+
 
 
 ///////////////
 //  RADIX   //
 /////////////
+
 int getMax(int vetor[], int tamVetor)
 {
     int max = vetor[0], i;
@@ -177,6 +191,59 @@ void radixSort(int vetor[], int tamVetor)
     for(exp=1; m/exp>0; exp*=10)
         coutingsort_radix(vetor, tamVetor, exp);
 }
+
+
+///////////////
+//  MERGE   //
+/////////////
+
+void mergesort(int *arr, int tam)
+{
+    mergesort1(arr, 0, tam);
+}
+
+void mergesort1(int *arr, int p, int r)
+{
+    if(p<r-1)
+    {
+        int q = (p+r)/2;
+        mergesort1(arr, p, q);
+        mergesort1(arr, q, r);
+        merge(arr, p, q, r);
+    }
+}
+void merge(int *arr, int p, int q, int r)
+{
+    int i, j, k, *w;
+    w = (int *) malloc((r-p)*sizeof(int));
+    i=p;
+    j=q;
+    k=0;
+
+    while(i<q && j<r)
+    {
+        if(arr[i]<=arr[j])
+            w[k++]=arr[i++];
+
+        else
+            w[k++] = arr[j++];
+    }
+
+    while(i<q)
+        w[k++]=arr[i++];
+
+    while(j<r)
+        w[k++]=arr[j++];
+
+    for(i=p; i<r; ++i)
+        arr[i]=w[i-p];
+
+    free(w);
+}
+
+
+
+
 
 
 

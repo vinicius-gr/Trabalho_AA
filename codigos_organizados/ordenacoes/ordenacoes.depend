@@ -43,7 +43,7 @@
 
 1498665978 source:c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\radixsort.c
 
-1498668107 source:c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\algoritmos.c
+1498680625 source:c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\algoritmos.c
 
 1498666415 source:c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\leitura.c
 	"leitura.h"
@@ -52,14 +52,14 @@
 	<stdio.h>
 	<string.h>
 
-1498669156 source:c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\main.c
+1498672581 source:c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\main.c
 	"ordenacoes.h"
 
-1498667436 c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\algoritmos.h
+1498681861 c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\algoritmos.h
 	<stdlib.h>
 	<math.h>
 
-1498669812 c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\tempos.h
+1498672581 c:\users\eseba\documents\github\trabalho_aa\codigos_organizados\ordenacoes\tempos.h
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
