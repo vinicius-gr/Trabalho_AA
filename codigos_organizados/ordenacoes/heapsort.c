@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "ordenacoes.h"
 
 void swap (int *arr, int a, int b)
 {
@@ -9,7 +10,7 @@ void swap (int *arr, int a, int b)
 
 int total;
 
-void heapify(int arr[], int i)
+void heapify(int *arr, int i)
 {
     int lft = i * 2;
     int rgt = lft + 1;
@@ -24,7 +25,7 @@ void heapify(int arr[], int i)
     }
 }
 
-void heapsort(int arr[], int size)
+void heapsort(int *arr, int size)
 {
     total = size - 1;
     int i;

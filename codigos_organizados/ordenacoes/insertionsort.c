@@ -1,4 +1,6 @@
-int insertionSort(int vetor[], int tamVetor)
+#include "ordenacoes.h"
+
+void insertionSort(int vetor[], int tamVetor)
 {
     int i, j, atual;
     for(i=1; i<tamVetor; i++)
@@ -13,6 +15,4 @@ int insertionSort(int vetor[], int tamVetor)
         }
         vetor[j+1]=atual;
     }
-//    return (int *)vetor;
-    return 0;
 }

@@ -1,17 +1,10 @@
 #include "ordenacoes.h"
-#define nomes "nomes.txt"
-#define media 3
 
 
 int main()
 {
-    int i;
-    int *vet, size;
-    char nome[80];
-    FILE *reader = fopen(nomes, "r");
+    FILE *reader = fopen(NOMES, "r");
     FILE *tempos;
-    clock_t tempo;
-    double time_taken;
 
     int op;
 
@@ -34,108 +27,40 @@ int main()
         case 1:
 
             tempos = fopen("tempos\\heapsort.txt", "w");
-
-            while(!feof(reader))
-            {
-                fscanf(reader, "%s\n", &nome);
-                size = 0;
-                time_taken = 0.0;
-
-                for (i=0; i<media; i++)
-                {
-                    vet = preenche_vetor(nome, &size);
-                    tempo = clock();
-                    heapsort(vet, size);
-                    tempo = clock() - tempo;
-
-                    time_taken += ((double)tempo)/CLOCKS_PER_SEC;
-                }
-
-
-                fprintf(tempos, "%s: %f\n", nome, (time_taken/media));
-            }
+            le_ordena_grava_tempo(heapsort, tempos,reader);
             break;
 
         case 2:
             tempos = fopen("tempos\\mergesort.txt", "w");
+
             break;
 
         case 3:
             tempos = fopen("tempos\\quicksort.txt", "w");
-
-            while(!feof(reader))
-            {
-                fscanf(reader, "%s\n", &nome);
-                size = 0;
-                time_taken = 0.0;
-
-                for (i=0; i<media; i++)
-                {
-                    vet = preenche_vetor(nome, &size);
-                    tempo = clock();
-                    quicksort(vet, size);
-                    tempo = clock() - tempo;
-
-                    time_taken += ((double)tempo)/CLOCKS_PER_SEC;
-                }
-
-
-                fprintf(tempos, "%s: %f\n", nome, (time_taken/media));
-            }
-
+            le_ordena_grava_tempo(quicksort, tempos,reader);
             break;
 
         case 4:
             tempos = fopen("tempos\\bucketsort.txt", "w");
+
             break;
 
         case 5:
             tempos = fopen("tempos\\radixsort.txt", "w");
-
-            while(!feof(reader))
-            {
-                fscanf(reader, "%s\n", &nome);
-                size = 0;
-                time_taken = 0.0;
-
-                for (i=0; i<media; i++)
-                {
-                    vet = preenche_vetor(nome, &size);
-                    tempo = clock();
-                    radixSort(vet, size);
-                    tempo = clock() - tempo;
-
-                    time_taken += ((double)tempo)/CLOCKS_PER_SEC;
-                }
-
-
-                fprintf(tempos, "%s: %f\n", nome, (time_taken/media));
-            }
-
+            le_ordena_grava_tempo(radixSort, tempos, reader);
             break;
 
         case 6:
             tempos = fopen("tempos\\insertionsort.txt", "w");
+            le_ordena_grava_tempo(insertionSort, tempos,reader);
+            break;
 
-            while(!feof(reader))
-            {
-                fscanf(reader, "%s\n", &nome);
-                size = 0;
-                time_taken = 0.0;
-
-                for (i=0; i<media; i++)
-                {
-                    vet = preenche_vetor(nome, &size);
-                    tempo = clock();
-                    insertionSort(vet, size);
-                    tempo = clock() - tempo;
-
-                    time_taken += ((double)tempo)/CLOCKS_PER_SEC;
-                }
-
-                fprintf(tempos, "%s: %f\n", nome, (time_taken/media));
-            }
-
+        case 7:
+            tempos = fopen("tempos\\coutingsort.txt", "w");
+//            le_ordena_grava_tempo(countingsort, tempos, reader);
+            int aaa[] = {5,6,4,7,6,5,11,33,5,0};
+            int i;
+            countingsort(aaa, 10);
             break;
         }
     }

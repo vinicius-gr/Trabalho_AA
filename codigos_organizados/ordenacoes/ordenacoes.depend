@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1498603128 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\heapsort.c
+	<stdio.h>
+	"ordenacoes.h"
+
+1498603178 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\insertionsort.c
+	"ordenacoes.h"
+
+1498603128 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\leitura.c
+	"ordenacoes.h"
+
+1498618800 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\main.c
+	"ordenacoes.h"
+
+1498618122 c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\ordenacoes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+
+1498601475 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\quicksort.c
+
+1498601475 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\radixsort.c
+	<stdio.h>
+
+1498617330 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\algoritmos.c
+	"ordenacoes.h"
+
+1498619200 source:c:\users\vinicius\documents\github\trabalho_aa\codigos_organizados\ordenacoes\countingsort.c
+	"ordenacoes.h"
+

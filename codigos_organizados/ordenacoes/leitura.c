@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "ordenacoes.h"
 
 char *insere_caminho (char *nome)
 {
