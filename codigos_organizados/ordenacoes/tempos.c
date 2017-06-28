@@ -1,8 +1,14 @@
 #include "tempos.h"
 
-#define MEDIA 5
+int i;
+int array[MAX], size;
+double arrayD[MAX],teste;
+char nome[80];
+struct timespec inicio, fim;
+uint64_t tempo_de_cpu;
+uint64_t soma;
 
-void le_ordena_grava_tempo (void funcao_ordenacao(int *arr, int tam), FILE *tempos, FILE *reader)
+void le_ordena_grava_tempo (void funcao_ordenacao(int *arr, int size), FILE *tempos, FILE *reader)
 {
     int size, *vet, i;
 
@@ -17,16 +23,14 @@ void le_ordena_grava_tempo (void funcao_ordenacao(int *arr, int tam), FILE *temp
         size = 0;
         time_taken = 0.0;
 
-        for (i=0; i<MEDIA; i++)
+        for (i=0; i<NUM_EXECS; i++)
         {
             vet = preenche_vetor(nome, &size);
-            tempo = clock();
-            funcao_ordenacao(vet, size);
-            tempo = clock() - tempo;
-
-            time_taken += ((double)tempo)/CLOCKS_PER_SEC;
+            CRONOMETRA1(funcao_ordenacao, vet, size);
+            soma += tempo_de_cpu;
+            rewind(vet);
         }
 
-        fprintf(tempos, "%d\t%f\n", size, (time_taken/MEDIA));
+        fprintf(tempos, "%d \t %llu\n",size, (long long unsigned int) (soma / (uint64_t) NUM_EXECS));
     }
 }

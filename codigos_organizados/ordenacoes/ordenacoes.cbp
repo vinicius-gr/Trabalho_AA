@@ -35,18 +35,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="algoritmos.h" />
-		<Unit filename="algoritmos1.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="countingsort.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="heapsort.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="insertionsort.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="leitura.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -55,10 +43,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ordenacoes.h" />
-		<Unit filename="quicksort.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="radixsort.c">
+		<Unit filename="tempos.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="tempos.h" />
