@@ -1,4 +1,4 @@
-#include "ordenacoes.h"
+#include "leitura.h"
 
 char *insere_caminho (char *nome)
 {

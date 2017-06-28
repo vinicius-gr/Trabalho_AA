@@ -34,6 +34,10 @@
 		<Unit filename="algoritmos.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="algoritmos.h" />
+		<Unit filename="algoritmos1.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="countingsort.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -46,6 +50,7 @@
 		<Unit filename="leitura.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="leitura.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -56,6 +61,7 @@
 		<Unit filename="radixsort.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="tempos.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -1,6 +1,5 @@
 #include "ordenacoes.h"
 
-
 int main()
 {
     FILE *reader = fopen(NOMES, "r");
@@ -25,14 +24,12 @@ int main()
         switch (op)
         {
         case 1:
-
             tempos = fopen("tempos\\heapsort.txt", "w");
-            le_ordena_grava_tempo(heapsort, tempos,reader);
+            le_ordena_grava_tempo(heapsort,tempos,reader);
             break;
 
         case 2:
             tempos = fopen("tempos\\mergesort.txt", "w");
-
             break;
 
         case 3:
@@ -42,7 +39,6 @@ int main()
 
         case 4:
             tempos = fopen("tempos\\bucketsort.txt", "w");
-
             break;
 
         case 5:
@@ -57,10 +53,6 @@ int main()
 
         case 7:
             tempos = fopen("tempos\\coutingsort.txt", "w");
-//            le_ordena_grava_tempo(countingsort, tempos, reader);
-            int aaa[] = {5,6,4,7,6,5,11,33,5,0};
-            int i;
-            countingsort(aaa, 10);
             break;
         }
     }
