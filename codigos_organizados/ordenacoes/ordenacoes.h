@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "tempos.h"
+#include "tempo.h"
 
-#define NOMES "arranjos\\nomes.txt"
-
+#define NOMES "arranjos/nomes.txt"
 
 

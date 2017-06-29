@@ -2,7 +2,7 @@
 
 char *insere_caminho (char *nome)
 {
-    char caminho[] = "arranjos\\";
+    char caminho[] = "arranjos/";
     int tam = (strlen(nome) + strlen(caminho))+1;
     char *caminho_completo = malloc(sizeof(char)*(tam));
 
