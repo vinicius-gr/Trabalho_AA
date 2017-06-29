@@ -114,3 +114,34 @@
 	"algoritmos.h"
 	"leitura.h"
 
+1498710051 source:c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\algoritmos.c
+
+1498710051 source:c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\leitura.c
+	"leitura.h"
+
+1498689872 c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\leitura.h
+	<stdio.h>
+	<string.h>
+
+1498710051 source:c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\main.c
+	"ordenacoes.h"
+
+1498710051 c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\ordenacoes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tempo.h"
+
+1498710051 source:c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\tempos.c
+	"tempos.h"
+
+1498710051 c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\tempos.h
+	<stdint.h>
+	<time.h>
+	"algoritmos.h"
+	"leitura.h"
+
+1498710051 c:\users\vinicius\documents\github\trabalho_aa\aa_final\ordenacoes\algoritmos.h
+	<stdlib.h>
+	<math.h>
+
