@@ -1,0 +1,116 @@
+# depslib dependency file v1.0
+1498690765 source:/home/joliveira/Documentos/Trabalho AA/Final-AA/algoritmos.c
+
+1498691071 source:/home/joliveira/Documentos/Trabalho AA/Final-AA/leitura.c
+	"leitura.h"
+
+1498691048 /home/joliveira/Documentos/Trabalho AA/Final-AA/leitura.h
+	<stdio.h>
+	<string.h>
+
+1498691129 source:/home/joliveira/Documentos/Trabalho AA/Final-AA/main.c
+	"ordenacoes.h"
+
+1498691013 /home/joliveira/Documentos/Trabalho AA/Final-AA/ordenacoes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tempo.h"
+
+1498690777 /home/joliveira/Documentos/Trabalho AA/Final-AA/tempo.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	<time.h>
+	<float.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<math.h>
+	"algoritmos.h"
+	"leitura.h"
+
+1498690754 /home/joliveira/Documentos/Trabalho AA/Final-AA/algoritmos.h
+	<stdlib.h>
+	<math.h>
+
+1498691726 source:/home/joliveira/Documentos/Trabalho AA/Final-AA/tempos.c
+	"tempo.h"
+
+1498691129 source:/home/joliveira/Documentos/1 - Trabalho AA/Final-AA/main.c
+	"ordenacoes.h"
+
+1498691013 /home/joliveira/Documentos/1 - Trabalho AA/Final-AA/ordenacoes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tempo.h"
+
+1498690777 /home/joliveira/Documentos/1 - Trabalho AA/Final-AA/tempo.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	<time.h>
+	<float.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<math.h>
+	"algoritmos.h"
+	"leitura.h"
+
+1498690754 /home/joliveira/Documentos/1 - Trabalho AA/Final-AA/algoritmos.h
+	<stdlib.h>
+	<math.h>
+
+1498691048 /home/joliveira/Documentos/1 - Trabalho AA/Final-AA/leitura.h
+	<stdio.h>
+	<string.h>
+
+1498696441 source:/home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/leitura.c
+	"leitura.h"
+
+1498691048 /home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/leitura.h
+	<stdio.h>
+	<string.h>
+
+1498696546 source:/home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/main.c
+	"ordenacoes.h"
+
+1498695913 /home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/ordenacoes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tempo.h"
+
+1498690777 /home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/tempo.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	<time.h>
+	<float.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<math.h>
+	"algoritmos.h"
+	"leitura.h"
+
+1498690754 /home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/algoritmos.h
+	<stdlib.h>
+	<math.h>
+
+1498696624 source:/home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/tempos.c
+	"tempos.h"
+
+1498695099 source:/home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/algoritmos.c
+
+1498696814 /home/vinicius/Documentos/Trabalho_AA/codigos_organizados/ordenacoes/tempos.h
+	<stdint.h>
+	<time.h>
+	"algoritmos.h"
+	"leitura.h"
+

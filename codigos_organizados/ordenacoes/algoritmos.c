@@ -1,3 +1,4 @@
+
 void swap (int *arr, int a, int b)
 {
     int tmp = arr[a];
@@ -166,7 +167,7 @@ int getMax(int vetor[], int tamVetor)
 
 void coutingsort_radix(int vetor[], int tamVetor, int exp)
 {
-    int saida[tamVetor]; //vetor de saída
+    int saida[tamVetor]; //vetor de saÃ­da
     int i, count[10] = {0};
 
     for(i=0; i<tamVetor; i++)
@@ -240,10 +241,3 @@ void merge(int *arr, int p, int q, int r)
 
     free(w);
 }
-
-
-
-
-
-
-
