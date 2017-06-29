@@ -125,11 +125,7 @@ void quick (int *vet, int esq, int dir)
 int particiona (int *vet, int esq, int dir)
 {
     int i;
-    int pivo = esq + rand()%(dir-esq+1);
-
-    swap(vet, pivo, esq);
-
-    pivo = esq;
+    int pivo = esq;
 
     for (i = esq+1; i <= dir; i++)
     {

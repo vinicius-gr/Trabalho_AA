@@ -1,0 +1,21 @@
+set term png
+set output 'insertionsortCrescente.png'
+set encoding utf8
+
+set xlabel "n (tamanho do vetor)"
+set ylabel "Tempo (ns)"
+set xtics nomirror
+set ytics nomirror
+
+set key Left 
+set key left top
+
+t(x) = a*x + b
+fit t(x) 'insertionsortCrescente.txt' using 1:2 via a, b
+
+titulo = sprintf("T(n) = %.4g*n + %.4g",a,b)
+titulo = sprintf("Método InsertionSort com vetor crescente\n%s", titulo)
+set title titulo
+
+plot 'insertionsortCrescente.txt' title "medições" with points, \
+     t(x) title "T(n)" lt 1 lc 3

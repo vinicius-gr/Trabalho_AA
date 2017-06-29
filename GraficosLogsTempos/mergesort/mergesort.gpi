@@ -1,0 +1,21 @@
+set term png
+set output 'mergesortParcialmenteDecrescente90.png'
+set encoding utf8
+
+set xlabel "n (tamanho do vetor)"
+set ylabel "Tempo (ns)"
+set xtics nomirror
+set ytics nomirror
+
+set key Left 
+set key left top
+
+t(x) = a*x*log(x) + b
+fit t(x) 'mergesortParcialmenteDecrescente90.txt' using 1:2 via a, b
+
+titulo = sprintf("T(n) = n*%.4gLog(n) + %.4g",a,b)
+titulo = sprintf("Método MergeSort com vetor parcialmente decrescente(90)\n%s", titulo)
+set title titulo
+
+plot 'mergesortParcialmenteDecrescente90.txt' title "medições" with points, \
+     t(x) title "T(n)" lt 1 lc 3
